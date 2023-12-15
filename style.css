@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+/* PRIMARY COLOURS */
+--clr-primary-pale-blue:hsl(225, 100%, 94%);
+--clr-primary-bright-blue:hsl(245, 75%, 52%);
+/* NEUTRAL COLOURS */
+--clr-neutral-very-pale-blue:hsl(225, 100%, 98%);
+--clr-neutral-desaturated-blue:hsl(224, 23%, 55%);
+--clr-neutral-dark-blue:hsl(223, 47%, 23%);
+
+/* FONTS */
+--ff-main: 'Red Hat Display', sans-serif;
+
+}
+
+/* General Styles */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--ff-main);
+    display: grid;
+    background:url(/images/pattern-background-desktop.svg) no-repeat;
+    background-color: var(--clr-primary-pale-blue);
+    background-size: contain;
+    font-family: var(--ff-main);
+    min-height: 100vh;
+    place-items: center;
+}
+
+.container{
+    background-color: #fff;
+    max-width: 450px;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    box-shadow: 0 15px 25px 0 hsla(245, 75%, 52%, .11);
+   
+}
+
+.container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.internal__container{
+    padding: 40px;
+}
+
+.container h1{
+    font-size: 1.75rem;
+    text-align: center;
+    font-weight: 900;
+    color: var(--clr-neutral-dark-blue);
+    /* padding: 2rem 0 1.25rem 0; */
+}
+
+.description{
+    /* margin-top: 0.25rem; */
+    text-align: center;
+    padding: 1rem;
+    color: var(--clr-neutral-desaturated-blue)
+}
+.pricing__section{
+    background: var(--clr-neutral-very-pale-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+.pricing-box-left{
+    display: flex;
+
+}
+
+.plan__details{
+    margin-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-betweenx;
+}
+.plan{
+    font-weight: 700;
+    color: var(--clr-neutral-dark-blue)
+}
+
+.icon__box{
+    display: flex;
+}
+
+
+/* Buttons
+ */
+
+ .button__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    gap: .65rem;
+  
+ }
+.btn{
+    all:unset;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: .95rem;
+    font-weight: 700;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding: 1rem
+}
+
+.btn__pay{
+    background: var(--clr-primary-bright-blue);
+    color: white;
+    box-shadow: 0 15px 20px 0 hsla(245, 75%, 52%, .25);
+    opacity: 1;
+    transition: all .2s ease;
+}
+.btn__pay:hover{
+    opacity: .8;
+}
